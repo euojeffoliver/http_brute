@@ -1,6 +1,6 @@
 ┌──(root㉿jeffhack)-[~/projects]
 
-└─$ cat README.md
+└─$ more http_brute.py
 
     ╔═╗╔═╗╔╦╗╔═╗  ╦╔═╗  ╦  ╔═╗╦ ╦
     ║  ║ ║ ║║║╣   ║╚═╗  ║  ╠═╣║║║
@@ -16,10 +16,6 @@
     ║  >> Master the code, control the system        ║
     ║                                                ║
     ╚════════════════════════════════════════════════╝
-
-┌──(root㉿jeffhack)-[~/projects]
-
-└─$ sudo ./control.sh --permissions=root
 
 ---
 
