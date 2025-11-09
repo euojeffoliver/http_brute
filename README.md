@@ -19,7 +19,7 @@
 
 ---
 
-# brute_http — README completo (documentação do projeto para fins educacionais)
+# brute_http — README completo
 
 > Uso exclusivo em ambientes autorizados (sua máquina, VMs, DVWA, Juice Shop).
 > Qualquer uso não autorizado é ilegal. Leia a seção AVISO.
@@ -28,7 +28,7 @@
 
 ## 1) Título
 
-**brute_http — Prova de Conceito Educacional (lab local)**
+**brute_http — Prova de Conceito (lab local)**
 
 ---
 
@@ -43,7 +43,7 @@
 ## 3) Resumo (visão geral)
 
 * Projeto: PoC simples que demonstra técnica de tentativa de autenticação por força bruta em formulários HTTP via POST.
-* Propósito educacional: ensinar detecção, mitigação e práticas seguras (rate-limit, logging e whitelist).
+* Propósito: ensinar detecção, mitigação e práticas seguras (rate-limit, logging e whitelist).
 * Não contém instruções para uso malicioso; contém explicações técnicas, riscos e contramedidas.
 
 ---
@@ -56,7 +56,6 @@
 * `brute_http_safe.py` — *opcional* script seguro (não incluído aqui).
 * `requirements.txt` — bibliotecas necessárias para o lab.
 * `lab/` — docker-compose com DVWA/Juice Shop (opcional).
-* `LICENSE` — licença (ex.: MIT, deixar claro uso educacional).
 * `CHANGELOG.md` — histórico de mudanças.
 
 ---
@@ -87,7 +86,7 @@
 ### 7.1 Inicialização / ambiente
 
 * Objetivo: declarar configurações básicas do experimento (target URL, arquivo de wordlist, taxas, timeouts, arquivo de log).
-* Estratégia educativa: deixar valores claros e visíveis para mostrar que todo teste precisa de parâmetros controlados.
+* Estratégia: deixar valores claros e visíveis para mostrar que todo teste precisa de parâmetros controlados.
 
 ### 7.2 Validação do alvo (whitelist)
 
@@ -124,7 +123,7 @@
 ### 7.8 Detecção de sucesso (heurística)
 
 * Objetivo: identificar quando uma tentativa foi bem-sucedida.
-* Exemplos de heurísticas educativas:
+* Exemplos de heurísticas:
 
   * Presença de texto específico na resposta (ex.: "Logout").
   * Redirecionamento para dashboard (código 302).
@@ -147,7 +146,7 @@
 
 ---
 
-## 8) Estratégias de defesa (educacional)
+## 8) Estratégias de defesa
 
 * Implementar **rate limiting** no servidor (por IP/usuário).
 * Contagem de tentativas e bloqueio temporário (ex.: 5 tentativas -> bloqueio 15 min).
@@ -188,28 +187,15 @@
 
 ## 12) Contribuições e conduta
 
-* Contribuições aceitas apenas se focarem em educação, defesa e segurança responsável.
 * Ao contribuir, inclua testes no lab e explique impacto ético.
 * Issues abusivas serão fechadas.
 
 ---
 
-## 13) Licença
-
-* Recomenda-se MIT com adição clara: “uso educacional e responsabilidade do usuário”.
-* Exemplo de frase na LICENSE: “Uso apenas para fins educacionais em ambientes autorizados. O autor não se responsabiliza por uso indevido.”
-
----
-
-## 14) Referências úteis (para estudo)
+## 13) Referências úteis (para estudo)
 
 * OWASP Top 10 — ler sobre autenticação e brute force.
 * DVWA / OWASP Juice Shop — plataformas de laboratório.
 * Artigos sobre rate limiting e account lockout.
 
 ---
-
-## 15) Notas finais (curtas)
-
-* Este README cobre o fluxo completo: propósito, segurança, explicação técnica por blocos, checklist e defesas.
-* Se quiser, transformo esta documentação em `README.md` pronto para commit com formatação final e badges.
