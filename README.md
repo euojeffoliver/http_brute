@@ -1,4 +1,5 @@
 ┌──(root㉿jeffhack)-[~/projects]
+
 └─$ cat README.md
 
     ╔═╗╔═╗╔╦╗╔═╗  ╦╔═╗  ╦  ╔═╗╦ ╦
@@ -17,6 +18,7 @@
     ╚════════════════════════════════════════════════╝
 
 ┌──(root㉿jeffhack)-[~/projects]
+
 └─$ sudo ./control.sh --permissions=root
 
 ---
